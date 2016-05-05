@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		999CE8771CD8FD1F0027481E /* ImageProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 999CE8761CD8FD1F0027481E /* ImageProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		999CE87F1CD8FD880027481E /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999CE87E1CD8FD880027481E /* ImageProcessor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		999CE8731CD8FD1F0027481E /* ImageProcessor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImageProcessor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		999CE8761CD8FD1F0027481E /* ImageProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageProcessor.h; sourceTree = "<group>"; };
 		999CE8781CD8FD1F0027481E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		999CE87E1CD8FD880027481E /* ImageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				999CE8761CD8FD1F0027481E /* ImageProcessor.h */,
 				999CE8781CD8FD1F0027481E /* Info.plist */,
+				999CE87E1CD8FD880027481E /* ImageProcessor.swift */,
 			);
 			path = ImageProcessor;
 			sourceTree = "<group>";
@@ -130,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				999CE87F1CD8FD880027481E /* ImageProcessor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +234,7 @@
 		999CE87C1CD8FD1F0027481E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -240,12 +245,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = by.stormnet.ImageProcessor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		999CE87D1CD8FD1F0027481E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
